@@ -1,16 +1,16 @@
 #include <stdio.h>
-#include "funcoes.h"
+#include "ponto.h"
+#include "circulo.h"
 
-int main(){
-    Ponto* p= pont_cria(2.0, 1.0);
-    Ponto* q= pont_cria(3.4, 2.1);
+int main()
+{
 
-    float d = pont_distancia(p, q);
+    printf("Bem Vindo!");
+    Circulo *circ = cria_cir(1.5, 0.7, 2.0);
+    float x = area_cir(circ);
+    printf("area do circulo %f", x);
 
-    printf("Distancia entre posntos %f \n", d);
-
-    pont_libera(p);
-    pont_libera(q);
+    libera_cir(circ);
 
     return 0;
 }

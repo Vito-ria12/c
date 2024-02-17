@@ -1,7 +1,7 @@
+#include "ponto.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "funcoes.h"
 
 /*para guarda as coordernadas do ponto(x,y) usamos essa struct*/
 struct ponto{
